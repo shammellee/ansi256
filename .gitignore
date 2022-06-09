@@ -1,0 +1,62 @@
+# C/C++
+*.d
+!*.d/
+
+# Python
+.ropeproject
+
+# Node
+node_modules
+
+# Compiled
+*.[ao]
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.py[co]
+*.app
+*.spl
+*.pygtex
+*.pygstyle
+*.fdb_latexmk
+ansi256
+
+# Backups & Temporary
+*.bak
+*.backup
+*.orig
+*.old
+*.pid
+*.tmp
+
+# Archives & Images
+*.[7g]z
+*.[jrt]ar
+*.dmg
+*.iso
+*.zip
+
+# Logs & Databases
+*.log
+*.sqlite
+
+# IDE-Generated
+*.vim
+*.sw[op]
+*.vim-bookmarks
+
+# Terraform
+.terraform/
+
+# Environment
+*.env
+
+# OS-Specific
+.DS_Store
+.DS_Store?
+
+# Build directories
+build/
+dist/
