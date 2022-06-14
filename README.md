@@ -1,8 +1,11 @@
-# ANSI 256
+# Colorbase
 
-Terminal command that prints the ANSI 256 color tables
+Command line color database.
 
-![ANSI 256 Color Tables](docs/images/ansi_256_color_tables.png "ANSI 256 Color Tables")
+## Features
+
+* Store and retrieve color palettes
+* Convert between color formats (RGB, HSL, hex)
 
 ## Requirements
 
@@ -19,19 +22,19 @@ $ make
 ## Running
 
 ```sh
-$ make run
-$ ./build/bin/ansi256
+$ make run               # Option 1
+$ ./build/bin/colorbase  # Option 2
 ```
 
 ## Installing
 
-After building, the executable will be located at `./build/bin/ansi256`.
+After building, the executable will be located at `./build/bin/colorbase`.
 Move or copy that file to a location specified in the `PATH` environment
 variable. For example…
 
 ```sh
-$ mv ./build/bin/ansi256 "${HOME}/"
-$ ansi256
+$ mv ./build/bin/colorbase "${HOME}/bin/"
+$ colorbase
 ```
 
 List the locations in `PATH` by running the following command line…

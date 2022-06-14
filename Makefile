@@ -2,8 +2,8 @@
 
 SHELL := $(shell which bash)
 
-PROJECT_NAME := ANSI 256
-EXE_NAME     := ansi256
+PROJECT_NAME := Colorbase
+EXE_NAME     := colorbase
 SRC_DIR      := src
 SOURCES      := $(wildcard $(SRC_DIR)/*.c)
 BUILD_DIR    := build

@@ -7,14 +7,19 @@ set(PROJECT_VERSION
 	${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH})
 
 set(SRC_DIR "src" CACHE STRING "Source directory")
-set(EXE_NAME "ansi256" CACHE STRING "Name of executable")
-set(PROJECT_NAME "ansi256" CACHE STRING "Project name")
+set(EXE_NAME "colorbase" CACHE STRING "Name of executable")
+set(PROJECT_NAME "Colorbase" CACHE STRING "Project name")
 
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION})
 
 set(CMAKE_VERBOSE_MAKEFILE off)
 set(CMAKE_BINARY_DIR bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY lib)
+
+include_directories(${PROJECT_SOURCE_DIR})
+
+# add_subdirectory(lib/mylib)
 
 set(SOURCES
   ${SRC_DIR}/main.c
@@ -28,6 +33,14 @@ set(SOURCES
 add_executable(${EXE_NAME} ${SOURCES})
 
 set_property(TARGET ${EXE_NAME} PROPERTY C_STANDARD 99)
+
+target_link_libraries(${EXE_NAME} colorbase)
+
+# target_include_directories(
+  # ${EXE_NAME}
+	# PUBLIC
+	# "${PROJECT_BINARY_DIR}"
+# )
 
 message(STATUS "${PROJECT_NAME} built!")
 

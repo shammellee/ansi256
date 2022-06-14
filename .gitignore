@@ -21,7 +21,7 @@ node_modules
 *.pygtex
 *.pygstyle
 *.fdb_latexmk
-ansi256
+colorbase
 
 # Backups & Temporary
 *.bak
