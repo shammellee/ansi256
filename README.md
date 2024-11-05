@@ -2,6 +2,8 @@
 
 Command line color database.
 
+![colorbase screenshot](img/screenshot.png)
+
 ## Features
 
 * Store and retrieve color palettes
